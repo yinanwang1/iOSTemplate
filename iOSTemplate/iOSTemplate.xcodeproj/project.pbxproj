@@ -49,6 +49,7 @@
 		C68499BA1E27602C005A6B1F /* YNWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = C68499B41E27602C005A6B1F /* YNWebService.m */; };
 		C68499BB1E27602C005A6B1F /* YNWebServiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C68499B61E27602C005A6B1F /* YNWebServiceModel.m */; };
 		C68499BF1E2760A0005A6B1F /* YNCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C68499BE1E2760A0005A6B1F /* YNCustomAlertView.m */; };
+		C68499C11E277A16005A6B1F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C68499C01E277A16005A6B1F /* Default-568h@2x.png */; };
 		C6C3CE931E272F6E00C0B253 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C3CE261E272B6600C0B253 /* CoreMotion.framework */; };
 		C6C3CE941E272F6E00C0B253 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C3CE241E272B2F00C0B253 /* libstdc++.tbd */; };
 		C6C3CE951E272F6E00C0B253 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C3CE221E272B1E00C0B253 /* libresolv.9.tbd */; };
@@ -216,6 +217,7 @@
 		C68499B61E27602C005A6B1F /* YNWebServiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNWebServiceModel.m; sourceTree = "<group>"; };
 		C68499BD1E2760A0005A6B1F /* YNCustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNCustomAlertView.h; sourceTree = "<group>"; };
 		C68499BE1E2760A0005A6B1F /* YNCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNCustomAlertView.m; sourceTree = "<group>"; };
+		C68499C01E277A16005A6B1F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C6C3CD6C1E27246000C0B253 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C6C3CE201E272B1300C0B253 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		C6C3CE221E272B1E00C0B253 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
@@ -670,6 +672,7 @@
 		C6C3CC031E2722DD00C0B253 = {
 			isa = PBXGroup;
 			children = (
+				C68499C01E277A16005A6B1F /* Default-568h@2x.png */,
 				C6C3CEB81E27308700C0B253 /* iOSTemplate */,
 				C6C3CC0D1E2722DD00C0B253 /* Products */,
 				C6C3CD6B1E27246000C0B253 /* Frameworks */,
@@ -1272,6 +1275,7 @@
 				C6C3D0941E27308700C0B253 /* YNWebViewController.xib in Resources */,
 				C6C3D0971E27308700C0B253 /* qijijssdk.js in Resources */,
 				C6C3D0341E27308700C0B253 /* SDK_4_1_1 in Resources */,
+				C68499C11E277A16005A6B1F /* Default-568h@2x.png in Resources */,
 				C6C3D0221E27308700C0B253 /* LaunchScreen.storyboard in Resources */,
 				C6C3D0231E27308700C0B253 /* Main.storyboard in Resources */,
 				C6C3D0961E27308700C0B253 /* js_bridge_demo_1.0.html in Resources */,
@@ -1621,7 +1625,8 @@
 					"\"${PODS_ROOT}/Headers/Public/AMapSearch\"",
 					"\"$(SRCROOT)/iOSTemplate/External/AlipaySDK\"",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/iOSTemplate/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1660,7 +1665,8 @@
 					"\"${PODS_ROOT}/Headers/Public/AMapSearch\"",
 					"\"$(SRCROOT)/iOSTemplate/External/AlipaySDK\"",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/iOSTemplate/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1699,7 +1705,8 @@
 					"\"${PODS_ROOT}/Headers/Public/AMapSearch\"",
 					"\"$(SRCROOT)/iOSTemplate/External/AlipaySDK\"",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/iOSTemplate/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

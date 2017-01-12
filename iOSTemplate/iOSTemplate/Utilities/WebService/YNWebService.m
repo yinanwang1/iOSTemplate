@@ -110,7 +110,7 @@
     DLog(@"Request %@", path);
     DLog(@"Params %@", parameters);
     
-    YNWebService *model = [YNWebService createWebServiceModelWithPath:path];
+    YNWebServiceModel *model = [YNWebService createWebServiceModelWithPath:path];
     parameters = [YNWebService signDictionary:parameters];
     
     NSURLSessionDataTask *task = [[YNWebService webService]

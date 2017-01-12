@@ -199,8 +199,6 @@ static char table[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
             bytes[length++] = (buffer[2] << 6) | buffer[3];
     }
     
-    realloc(bytes, length);
-    
     return [NSData dataWithBytesNoCopy:bytes length:length];
 }
 @end

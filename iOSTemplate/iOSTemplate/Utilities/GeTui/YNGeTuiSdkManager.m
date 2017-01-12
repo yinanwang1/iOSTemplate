@@ -11,9 +11,9 @@
 #import "AppDelegate.h"
 
 //个推
-#define kGexinAppId           @"A3numOO6gSArim0Z2Pem18"
-#define kGexinAppKey          @"KmQn3EouuD6UtDhqEB09u3"
-#define kGexinAppSecret       @"y6UlKcwErp74BoFs9eJ5f1"
+#define kGexinAppId           @""
+#define kGexinAppKey          @""
+#define kGexinAppSecret       @""
 
 static YNGeTuiSdkManager *geTuiManagerSharedInstance = nil;
 

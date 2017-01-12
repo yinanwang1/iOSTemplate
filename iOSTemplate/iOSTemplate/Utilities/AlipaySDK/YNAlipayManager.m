@@ -105,20 +105,6 @@ static YNAlipayManager * alipay_instance = nil;
     /*============================================================================*/
     /*============================================================================*/
     
-    //partner和seller获取失败,提示
-    if ([partner length] == 0 ||
-        [seller length] == 0 ||
-        [privateKey length] == 0)
-    {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
-                                                        message:@"缺少partner或者seller或者私钥。"
-                                                       delegate:self
-                                              cancelButtonTitle:@"确定"
-                                              otherButtonTitles:nil];
-        [alert show];
-        return;
-    }
-    
     self.delegate = delegate;
     /*
      *生成订单信息及签名

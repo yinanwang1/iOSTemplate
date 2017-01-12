@@ -53,15 +53,13 @@ static YNURLShortenService *_shareYNURLShortenService = nil;
     });
 }
 
--(NSString *)encodeURL:(NSString *)value{
+-(NSString *)encodeURL:(NSString *)value
+{
     if (value == nil)
         return @"";
     
-    NSString *result = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-                                                                                             (CFStringRef)value,
-                                                                                             NULL,
-                                                                                             CFSTR("!*'();:@&=+$,/?%#[]"),
-                                                                                             kCFStringEncodingUTF8));
+    NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"!*'();:@&=+$,/?%#[]"];
+    NSString *result = [value stringByAddingPercentEncodingWithAllowedCharacters:set];
     return result;
 }
 
