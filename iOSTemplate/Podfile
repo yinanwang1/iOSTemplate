@@ -1,0 +1,45 @@
+# Uncomment this line to define a global platform for your project
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+use_frameworks!
+
+target 'iOSTemplate' do
+
+# cocoapods
+pod 'AFNetworking', '= 3.1.0'
+pod 'MJRefresh', '= 3.1.12'
+pod 'XTSafeCollection', '= 1.0.4'
+pod 'iVersion', '= 1.11.4'
+pod 'TPKeyboardAvoiding', '= 1.3'
+pod 'JSONModel', '= 1.4.0'
+pod 'MBProgressHUD', '= 1.0.0'
+pod 'Masonry', '= 1.0.1'
+pod 'SDWebImage', '= 3.8.1'
+pod 'AMapLocation', '=2.1.0'
+pod 'AMap3DMap', '=4.2.0'
+pod 'AMapSearch', '=4.2.0'
+pod 'WebViewJavascriptBridge', '= 5.0.5'
+
+
+#设置Debug参数
+post_install do |installer|
+
+  installer.pods_project.targets.each do |target|
+
+    target.build_configurations.each do |config|
+      
+      if config.name == 'Ad-hoc' 
+       config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = '$(inherited) DEBUG=1'
+      
+      end
+
+end
+
+end
+
+end
+#设置参数完成
+
+end

@@ -1,0 +1,45 @@
+//
+//  PrefixHeader.pch
+//  iOSTemplate
+//
+//  Created by ArthurWang on 17/1/12.
+//  Copyright (c) 2017年 wang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+// Third Framework
+#import "Masonry/Masonry.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+
+// Base
+#import "YNMacrosUtils.h"
+#import "YNWebService.h"
+#import "YNBaseJSONModel.h"
+#import "YNMacrosEnum.h"
+#import "YNMacrosDefault.h"
+#import "YNBaseNavigationController.h"
+#import "ApplicationSettings.h"
+#import "YNAppConfig.h"
+
+// Category
+#import "UIViewController+Extensions.h"
+#import "UIColor+Extensions.h"
+#import "MBProgressHUD+YN.h"
+#import "UIImageView+WebCache.h"
+#import "UIWindow+Extension.h"
+#import "YNAppDeviceHelper.h"
+#import "NSDate+Extension.h"
+#import "UIView+Extension.h"
+
+// Utilities
+#import "YNRoundedButton.h"
+#import "YNWebViewController.h"
+#import "YNUserAccount.h"
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+            <title>JavascriptBridge Demo</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+                
+                <script type="text/javascript" src="./qijijssdk.js"></script>
+    </head>
+    
+    <body>
+        <h1>
+            JavascriptBridge Demo
+        </h1>
+        <script type="text/javascript">
+        
+        function pushViewWithUrlAndTitle(url, title) {
+            YNJSBridge.pushViewWithUrlAndTitle(url, title, function(data) {
+                                                alert(JSON.stringify(data));
+                                                })
+        }
+        
+        function closeCurrentView() {
+            YNJSBridge.closeCurrentView();
+        }
+        
+        
+        </script>
+        <script type="text/javascript">
+            function setNavigationButton() {
+                YNJSBridge.setNavigationButton({
+                                                type:'share',
+                                                title:'刷新',
+                                                image:null,
+                                                link:'http://baidu.com',
+                                                javascript:'onShare();'
+                                                });
+            }
+        
+        
+        function getPlatformInfo() {
+            YNJSBridge.getPlatformInfo(function(data) {
+                                        alert(JSON.stringify(data));
+                                        });
+        }
+        
+        function setTabBarHidden(hidden) {
+            YNJSBridge.setTabBarHidden(hidden, function(data) {
+                                   alert(JSON.stringify(data));
+                                   });
+        }
+        
+        function setNavigationBarHidden(hidden) {
+            YNJSBridge.setNavigationBarHidden(hidden, function(data) {
+                                        alert(JSON.stringify(data));
+                                        });
+        }
+        
+        function setNavigationBarBackButtonHidden(hidden) {
+            YNJSBridge.setNavigationBarBackButtonHidden(hidden, function(data) {
+                                               alert(JSON.stringify(data));
+                                               });
+        }
+        
+        function setNavigationBarTitle(title) {
+            YNJSBridge.setNavigationBarTitle(title, function(data) {
+                                                       alert(JSON.stringify(data));
+                                                    });
+        }
+        
+        function setLogin(token) {
+            YNJSBridge.setLogin(token, function(data) {
+                                        alert(JSON.stringify(data));
+                                        });
+        }
+        
+        function setLogout() {
+            YNJSBridge.setLogout(function(data) {
+                                 alert(JSON.stringify(data));
+                                 });
+        }
+        
+        function isLogin() {
+            YNJSBridge.isLogin(function(data) {
+                                  alert(JSON.stringify(data));
+                                  });
+        }
+        
+        
+            </script>
+
+        <button onclick="pushViewWithUrlAndTitle('http://www.baidu.com', '百度')">
+            新页面打开百度
+        </button>
+        <br />
+        <br />
+        <button onclick="closeCurrentView()">
+            关闭当前页面
+        </button>
+        <br />
+        <br />
+        <button onclick="setNavigationButton()">
+            设置导航栏按钮
+        </button>
+        <br />
+        <br />
+        <button onclick="setShareInfo()">
+            设置分享的内容
+        </button>
+        <br />
+        <br />
+        <button onclick="onShare()">
+            分享内容
+        </button>
+        <br />
+        <br />
+        <button onclick="getPlatformInfo()">
+            获取设备、App信息
+        </button>
+        <br />
+        <br />
+        <button onclick="setTabBarHidden('NO')">
+            显示Tab bar
+        </button>
+        <br />
+        <br />
+        <button onclick="setTabBarHidden('YES')">
+            隐藏Tab bar
+        </button>
+        <br />
+        <br />
+        <button onclick="setNavigationBarHidden('NO')">
+            显示Navigation bar
+        </button>
+        <br />
+        <br />
+        <button onclick="setNavigationBarHidden('YES')">
+            隐藏Navigation bar
+        </button>
+        <br />
+        <br />
+        <button onclick="setNavigationBarBackButtonHidden('YES')">
+            隐藏Navigation bar的返回按钮
+        </button>
+        <br />
+        <br />
+        <button onclick="setNavigationBarBackButtonHidden('NO')">
+            显示Navigation bar的返回按钮
+        </button>
+        <br />
+        <br />
+        <button onclick="setNavigationBarTitle('2017年1月4日')">
+            设置navigation bar title
+        </button>
+        <br />
+        <br />
+        <button onclick="setLogin()">
+            设置登录成功
+        </button>
+        <br />
+        <br />
+        <button onclick="setLogout()">
+            设置退出成功
+        </button>
+        <br />
+        <br />
+        <button onclick="isLogin()">
+            是否登陆
+        </button>
+        <div id="rets">
+        </div>
+    </body>
+    
+</html>
