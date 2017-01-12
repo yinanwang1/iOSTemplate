@@ -9,9 +9,12 @@
 #import "YNTaskViewController.h"
 
 #import "YNWebViewController.h"
+#import "YNQRCode.h"
 
 
 @interface YNTaskViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -29,17 +32,24 @@
 
 - (void)initialNavigatonBar
 {
-    self.navigationItem.title = @"待更换电池";
+    self.navigationItem.title = @"主页1";
     
     self.navigationItem.leftBarButtonItem = nil;
 }
 
 - (IBAction)onClickBtn:(id)sender
 {
-    YNWebViewController *webVC = [[YNWebViewController alloc] init];
-    webVC.url = [NSURL URLWithString:@"http://exchange.dbike.co/auth.html"];
+//    YNWebViewController *webVC = [[YNWebViewController alloc] init];
+//    webVC.url = [NSURL URLWithString:@"http://exchange.dbike.co/auth.html"];
+//    
+//    [self.navigationController pushViewController:webVC animated:YES];
     
-    [self.navigationController pushViewController:webVC animated:YES];
+    UIImage *image = [YNQRCode createQRCodeImageWithString:@"http://www.baidu.com" size:300];
+    
+    self.imageView.image = image;
+    
+    NSString *string = [YNQRCode createQRCodeBase64WithString:@"http://www.baidu.com" size:300];
+    NSLog(@"string is %@>", string);
 }
 
 

@@ -50,6 +50,7 @@
 		C68499BB1E27602C005A6B1F /* YNWebServiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C68499B61E27602C005A6B1F /* YNWebServiceModel.m */; };
 		C68499BF1E2760A0005A6B1F /* YNCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C68499BE1E2760A0005A6B1F /* YNCustomAlertView.m */; };
 		C68499C11E277A16005A6B1F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C68499C01E277A16005A6B1F /* Default-568h@2x.png */; };
+		C68499C51E278126005A6B1F /* YNQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = C68499C41E278126005A6B1F /* YNQRCode.m */; };
 		C6C3CE931E272F6E00C0B253 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C3CE261E272B6600C0B253 /* CoreMotion.framework */; };
 		C6C3CE941E272F6E00C0B253 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C3CE241E272B2F00C0B253 /* libstdc++.tbd */; };
 		C6C3CE951E272F6E00C0B253 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C3CE221E272B1E00C0B253 /* libresolv.9.tbd */; };
@@ -91,7 +92,6 @@
 		C6C3D0421E27308700C0B253 /* YNMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C3CF521E27308700C0B253 /* YNMainViewController.m */; };
 		C6C3D0431E27308700C0B253 /* YNTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C3CF551E27308700C0B253 /* YNTaskViewController.m */; };
 		C6C3D0441E27308700C0B253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C3CF571E27308700C0B253 /* Assets.xcassets */; };
-		C6C3D0451E27308700C0B253 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6C3CF591E27308700C0B253 /* Info.plist */; };
 		C6C3D0461E27308700C0B253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C3CF5A1E27308700C0B253 /* main.m */; };
 		C6C3D0471E27308700C0B253 /* YNAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C3CF5F1E27308700C0B253 /* YNAlipayManager.m */; };
 		C6C3D0481E27308700C0B253 /* YNOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C3CF621E27308700C0B253 /* YNOrderInfo.m */; };
@@ -217,7 +217,9 @@
 		C68499B61E27602C005A6B1F /* YNWebServiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNWebServiceModel.m; sourceTree = "<group>"; };
 		C68499BD1E2760A0005A6B1F /* YNCustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNCustomAlertView.h; sourceTree = "<group>"; };
 		C68499BE1E2760A0005A6B1F /* YNCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNCustomAlertView.m; sourceTree = "<group>"; };
-		C68499C01E277A16005A6B1F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C68499C01E277A16005A6B1F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
+		C68499C31E278126005A6B1F /* YNQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNQRCode.h; sourceTree = "<group>"; };
+		C68499C41E278126005A6B1F /* YNQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNQRCode.m; sourceTree = "<group>"; };
 		C6C3CD6C1E27246000C0B253 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C6C3CE201E272B1300C0B253 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		C6C3CE221E272B1E00C0B253 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
@@ -669,10 +671,18 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
+		C68499C21E27810A005A6B1F /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				C68499C31E278126005A6B1F /* YNQRCode.h */,
+				C68499C41E278126005A6B1F /* YNQRCode.m */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
 		C6C3CC031E2722DD00C0B253 = {
 			isa = PBXGroup;
 			children = (
-				C68499C01E277A16005A6B1F /* Default-568h@2x.png */,
 				C6C3CEB81E27308700C0B253 /* iOSTemplate */,
 				C6C3CC0D1E2722DD00C0B253 /* Products */,
 				C6C3CD6B1E27246000C0B253 /* Frameworks */,
@@ -894,11 +904,11 @@
 		C6C3CF371E27308700C0B253 /* MVCs */ = {
 			isa = PBXGroup;
 			children = (
-				C6C3CF381E27308700C0B253 /* Battery */,
-				C6C3CF3B1E27308700C0B253 /* Login */,
-				C6C3CF441E27308700C0B253 /* My */,
 				C6C3CF471E27308700C0B253 /* Root */,
+				C6C3CF3B1E27308700C0B253 /* Login */,
 				C6C3CF531E27308700C0B253 /* Task */,
+				C6C3CF381E27308700C0B253 /* Battery */,
+				C6C3CF441E27308700C0B253 /* My */,
 			);
 			path = MVCs;
 			sourceTree = "<group>";
@@ -1001,6 +1011,7 @@
 		C6C3CF561E27308700C0B253 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C68499C01E277A16005A6B1F /* Default-568h@2x.png */,
 				C6C3CF571E27308700C0B253 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -1019,6 +1030,7 @@
 		C6C3CF5C1E27308700C0B253 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C68499C21E27810A005A6B1F /* QRCode */,
 				C68499BC1E2760A0005A6B1F /* AlertView */,
 				C68499AA1E27602C005A6B1F /* Progress */,
 				C68499B01E27602C005A6B1F /* WebService */,
@@ -1270,7 +1282,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C3D0451E27308700C0B253 /* Info.plist in Resources */,
 				C6C3D0241E27308700C0B253 /* AlipaySDK.bundle in Resources */,
 				C6C3D0941E27308700C0B253 /* YNWebViewController.xib in Resources */,
 				C6C3D0971E27308700C0B253 /* qijijssdk.js in Resources */,
@@ -1414,6 +1425,7 @@
 				C6C3D02E1E27308700C0B253 /* NSDataEx.m in Sources */,
 				C6C3D02D1E27308700C0B253 /* MD5DataSigner.m in Sources */,
 				C6C3D0521E27308700C0B253 /* YNSegmentControl.m in Sources */,
+				C68499C51E278126005A6B1F /* YNQRCode.m in Sources */,
 				C684999B1E275FE4005A6B1F /* NSDataAdditional.m in Sources */,
 				C6C3D0431E27308700C0B253 /* YNTaskViewController.m in Sources */,
 				C68499A11E275FE4005A6B1F /* YNFileHelper.m in Sources */,
@@ -1625,7 +1637,7 @@
 					"\"${PODS_ROOT}/Headers/Public/AMapSearch\"",
 					"\"$(SRCROOT)/iOSTemplate/External/AlipaySDK\"",
 				);
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = iOSTemplate/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1665,7 +1677,7 @@
 					"\"${PODS_ROOT}/Headers/Public/AMapSearch\"",
 					"\"$(SRCROOT)/iOSTemplate/External/AlipaySDK\"",
 				);
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = iOSTemplate/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1705,7 +1717,7 @@
 					"\"${PODS_ROOT}/Headers/Public/AMapSearch\"",
 					"\"$(SRCROOT)/iOSTemplate/External/AlipaySDK\"",
 				);
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = iOSTemplate/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

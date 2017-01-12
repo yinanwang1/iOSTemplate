@@ -255,6 +255,10 @@
                                     <action selector="onClickBtn:" destination="07b-lv-Rqe" eventType="touchUpInside" id="Qni-gG-RWK"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uYt-q2-REA">
+                                <rect key="frame" x="42" y="219" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -264,10 +268,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="obA-7d-WLc"/>
                     <navigationItem key="navigationItem" id="ZwY-M6-x73"/>
+                    <connections>
+                        <outlet property="imageView" destination="uYt-q2-REA" id="STe-GO-gKY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UiW-vq-74o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3001" y="-484"/>
+            <point key="canvasLocation" x="3000.8000000000002" y="-484.40779610194909"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="oTj-6U-UtX">
